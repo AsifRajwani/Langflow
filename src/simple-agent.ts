@@ -1,12 +1,21 @@
 import readline from 'readline';
 import fetch from 'node-fetch';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-const url = 'http://localhost:7860/api/v1/run/29808535-af71-4266-b7d0-e22be36f87b1';
+const url = process.env.SIMPLE_AGENT_URL || ""
+const langFlowApiKey = process.env.LANG_FLOW_API_KEY || ""
+
+if (!url || !langFlowApiKey) {  
+    console.error("Error: SIMPLE_AGENT_URL or LANG_FLOW_API_KEY is not defined in environment variables.");
+    process.exit(1);
+}
 
 let previousAnswer: string | null = null;
 
@@ -21,7 +30,7 @@ async function askAgent(question: string): Promise<string> {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'x-api-key': 'sk-_IKks_HrBBRLy7JxIBrxVFbF8U-kcuVsqflgBh3nKxs'
+            'x-api-key': langFlowApiKey
         },
         body: JSON.stringify(payload)
     };

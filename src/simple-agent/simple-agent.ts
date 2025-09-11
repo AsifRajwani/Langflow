@@ -9,7 +9,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const url = process.env.SIMPLE_AGENT_URL || ""
+const url = process.env.LANG_FLOW_SERVER_ADDRESS + "/api/v1/run/" + process.env.SIMPLE_AGENT_FLOW_ID || ""
 const langFlowApiKey = process.env.LANG_FLOW_API_KEY || ""
 
 if (!url || !langFlowApiKey) {  

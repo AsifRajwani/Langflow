@@ -13,8 +13,8 @@ const FILE_COMPONENT_ID = "File-lnT93"; // The ID of the component in your flow 
 const CHAT_INPUT = "What is this file about?"; // The message you want to send to the chatbot
 
 // The file to be uploaded
-const filePath = "/Users/asifrajwani/stuff2/code/AI/Langflow/Langflow/kb/warranty copy.md"; // This is a placeholder for Node.js. In a browser, you'd get the file from an <input type="file"> element.
-const fileName = "warranty copy.md";
+const filePath = "/Users/asifrajwani/stuff2/code/AI/Langflow/Langflow/kb/warranty.md"; // This is a placeholder for Node.js. In a browser, you'd get the file from an <input type="file"> element.
+const fileName = "warranty.md";
 
 
 

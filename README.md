@@ -40,31 +40,48 @@ To run these examples, you need the following:
 
 ### **1. Simple Agent**
 
-This example corresponds to the [LangFlow quickstart tutorial](https://docs.langflow.org/get-started-quickstart).
+This example corresponds to the [LangFlow quickstart tutorial](https://docs.langflow.org/get-started-quickstart). It demonstrates a basic, pre-configured agent that uses a single tool (the Calculator) to show fundamental functionality.
 
 - **To run**:
   ```bash
   node dist/simple-agent/simple-agent.js
   ```
 
----
+### **2. Connect Applications to Agents**
 
-### **2. Vector Store RAG**
+This tutorial focuses on how to **build an agent** within LangFlow itself. It teaches you to design and assemble an agent by connecting components and tools, such as a calculator and a web scraper.
 
-This example demonstrates a Retrieval-Augmented Generation (RAG) system. Note that the behavior of this flow can sometimes be inconsistent.
+- **To run**:
+  ```bash
+  node dist/agent-tutorial/agent-tutorial.js
+  ```
+
+### **3. Vector Store RAG**
+
+This example demonstrates a Retrieval-Augmented Generation (RAG) system. It shows how to create a chatbot that can answer questions based on a provided document. Note that the behavior of this flow can sometimes be inconsistent.
 
 - **To run**:
   ```bash
   node dist/vector-store-rag/file-upload.js
   ```
 
----
+### **4. Chatbot that Ingests Files**
 
-### **3. Chatbot that Ingests Files**
-
-This example shows how to create a chatbot that can ingest files, as described in the [LangFlow "Chat with Files" tutorial](https://docs.langflow.org/chat-with-files).
+This example shows how to create a chatbot that can ingest files, as described in the [LangFlow "Chat with Files" tutorial](https://docs.langflow.org/chat-with-files). It demonstrates the process of uploading a file and passing its path to the flow.
 
 - **To run**:
   ```bash
   node dist/injest-file-chatbot/injest-file-chatbot.js
   ```
+
+### **5. Model Context Protocol (MCP) Tutorial**
+
+This example explains the **Model Context Protocol (MCP)** and how to use LangFlow as both an MCP **client** and a **server**. It demonstrates how to expose your flows as tools for other applications.
+
+- **To run**:
+  ```bash
+  node dist/mcp-tutorial/mcp-tutorial.js
+  ```
+
+This video explains how to use LangFlow as both an MCP client and server. [Learn how to use Langflow as both an MCP client & server\!](https://www.youtube.com/watch?v=pEjsaVVPjdI)
+http://googleusercontent.com/youtube_content/4

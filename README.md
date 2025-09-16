@@ -31,11 +31,17 @@ APP_TO_AGENT_DIRECTORY_NODE_ID=your_directory_node_id
 APP_TO_AGENT_DIRECTORY=your_directory_path
 ```
 
-2.  **Build the Project**: Use the TypeScript compiler in watch mode to automatically compile your code.
+2.  **Install Dependencies**: Run npm install to install all required packages.
 
-    ```bash
-    tsc -w
-    ```
+```bash
+npm install
+```
+
+3.  **Build the Project**: Use the TypeScript compiler in watch mode to automatically compile your code.
+
+```bash
+tsc -w
+```
 
 ---
 

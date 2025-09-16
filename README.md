@@ -20,13 +20,16 @@ To run these examples, you need the following:
 
 1.  **Environment Variables**: Create a `.env` file in the root directory of the repository with the following variables:
 
-    ```ini
-    LANG_FLOW_API_KEY=your_langflow_api_key
-    LANG_FLOW_SERVER_ADDRESS=http://your_langflow_server_address:7860
-    SIMPLE_AGENT_FLOW_ID=your_simple_agent_flow_id
-    VECTOR_STORE_RAG_FLOW_ID=your_vector_store_rag_flow_id
-    INJEST_FILE_CHATBOT_FLOW_ID=your_injest_file_chatbot_flow_id
-    ```
+```ini
+LANG_FLOW_API_KEY=your_langflow_api_key
+LANG_FLOW_SERVER_ADDRESS=http://your_langflow_server_address:7860
+SIMPLE_AGENT_FLOW_ID=your_simple_agent_flow_id
+VECTOR_STORE_RAG_FLOW_ID=your_vector_store_rag_flow_id
+INJEST_FILE_CHATBOT_FLOW_ID=your_injest_file_chatbot_flow_id
+APP_TO_AGENT_FLOW_ID=your_app_to_agent_flow_id
+APP_TO_AGENT_DIRECTORY_NODE_ID=your_directory_node_id
+APP_TO_AGENT_DIRECTORY=your_directory_path
+```
 
 2.  **Build the Project**: Use the TypeScript compiler in watch mode to automatically compile your code.
 

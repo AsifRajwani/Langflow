@@ -6,7 +6,9 @@ dotenv.config();
 const LANGFLOW_SERVER_ADDRESS = process.env.LANG_FLOW_SERVER_ADDRESS || "";
 const FLOW_ID = process.env.APP_TO_AGENT_FLOW_ID || "";
 const LANGFLOW_API_KEY = process.env.LANG_FLOW_API_KEY || "";
-const email = "isabella.rodriguez@example.com";
+const APP_TO_AGENT_DIRECTORY_NODE_ID = process.env.APP_TO_AGENT_DIRECTORY_NODE_ID || "Dry-vcXQS";
+const APP_TO_AGENT_DIRECTORY = process.env.APP_TO_AGENT_DIRECTORY || "";
+const email = "carol.davis@example.com";
 
 async function runAgentFlow(): Promise<void> {
     try {
@@ -28,8 +30,8 @@ async function runAgentFlow(): Promise<void> {
         const response = await flow.run(email, {
             session_id: email, // Use email as session ID for context
             tweaks: {
-                "Directory-vcXQS": {
-                    "path": "/Users/asifrajwani/stuff2/code/AI/Langflow/Langflow/customer-orders"
+                APP_TO_AGENT_DIRECTORY_NODE_ID: {
+                    "path": APP_TO_AGENT_DIRECTORY
                 }
             }
         });

@@ -49,6 +49,22 @@ This example corresponds to the [LangFlow quickstart tutorial](https://docs.lang
 
 ### **2. Connect Applications to Agents**
 
+---
+
+#### **Troubleshooting & Usage Notes for CSV File and Directory Handling**
+
+1. **Directory Component Path**: Setting up the directory path in the LangFlow directory component does not work as expected. You need to place your CSV file in the working directory. Copy the `customer-orders.csv` file from the `customer-order` directory to your default working directory.
+
+   **What is the working directory?** For the LangFlow Desktop app, the working directory is the folder where LangFlow looks for files by default. On Mac, if you start LangFlow from the toolbar (not the terminal), this is usually `~/.langflow/data`. If you start LangFlow from the terminal, the working directory will be the folder from which you launched the app.
+
+2. **CSV File Access**: Initially, LangFlow may not read the CSV file and might say it does not have access to order history. If this happens, try entering a prompt like: `Where you are looking for purchase data I uploaded csv already.` After this, it should start working and access your data.
+
+3. **Session Creation & First Run Workaround**: Running the TypeScript program will create a session with your user email, but it may not work on the first try. You can go to the LangFlow playground and use the prompt `Where you are looking for purchase data I uploaded csv already.`. After this, run the TypeScript program again and it should work!
+
+4. **Hardcoded Email Address**: The email address is hardcoded in `src/app-to-agent/app-to-agent.ts`. Please change it in the code to try different user IDs as needed.
+
+---
+
 This tutorial focuses on how to **build an agent** within LangFlow itself. It teaches you to design and assemble an agent by connecting components and tools, such as a calculator and a web scraper.
 
 - **To run**:

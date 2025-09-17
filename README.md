@@ -1,5 +1,7 @@
 ## **LangFlow Tutorial Examples**
 
+[LangFlow](https://www.langflow.org/) is a powerful visual development tool that simplifies the creation of LLM (Large Language Model) applications. It provides a user-friendly interface where you can build complex AI workflows by dragging, dropping, and connecting components. Using LangFlow, you can create custom chatbots, design AI agents, and build document analysis systems with minimal code.
+
 This repository contains code examples from the official [LangFlow tutorials](https://docs.langflow.org/). The code is written in **TypeScript** and demonstrates how to interact with flows created using the **LangFlow Desktop App**.
 
 Each example resides in its own directory and includes the exported LangFlow JSON file, allowing you to easily import and use the corresponding flow.
@@ -66,9 +68,9 @@ This example corresponds to the [LangFlow quickstart tutorial](https://docs.lang
 
    **What is the working directory?** For the LangFlow Desktop app, the working directory is the folder where LangFlow looks for files by default. On Mac, if you start LangFlow from the toolbar (not the terminal), this is usually `~/.langflow/data`. If you start LangFlow from the terminal, the working directory will be the folder from which you launched the app.
 
-2. **CSV File Access**: Initially, LangFlow may not read the CSV file and might say it does not have access to order history. If this happens, try entering a prompt like: `Where you are looking for purchase data I uploaded csv already.` After this, it should start working and access your data.
+2. **CSV File Access**: Initially, LangFlow may not read the CSV file (customer-orders.csv) and might say it does not have access to order history. If this happens, try entering a prompt like: `Where you are looking for purchase data I uploaded csv already.` After this, it should start working and access your data.
 
-3. **Session Creation & First Run Workaround**: Running the TypeScript program will create a session with your user email, but it may not work on the first try. You can go to the LangFlow playground and use the prompt `Where you are looking for purchase data I uploaded csv already.`. After this, run the TypeScript program again and it should work!
+3. **Session Creation & First Run Workaround**: Running the TypeScript program will create a session with email id, but it may not work on the first try. You can go to the LangFlow playground and use the prompt `Where you are looking for purchase data I uploaded csv already.`. After this, run the TypeScript program again and it should work!
 
 4. **Hardcoded Email Address**: The email address is hardcoded in `src/app-to-agent/app-to-agent.ts`. Please change it in the code to try different user IDs as needed.
 

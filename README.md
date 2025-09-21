@@ -60,6 +60,8 @@ This example corresponds to the [LangFlow quickstart tutorial](https://docs.lang
 
 ### **2. Connect Applications to Agents**
 
+This example corresponds to the [LangFlow Agent Tutorial](https://docs.langflow.org/agent-tutorial).
+
 ---
 
 #### **Troubleshooting & Usage Notes for CSV File and Directory Handling**
@@ -99,12 +101,9 @@ This example shows how to create a chatbot that can ingest files, as described i
 
 ### **5. Model Context Protocol (MCP) Tutorial**
 
-This example explains the **Model Context Protocol (MCP)** and how to use LangFlow as both an MCP **client** and a **server**. It demonstrates how to expose your flows as tools for other applications.
+This example corresponds to the [LangFlow MCP Tutorial](https://docs.langflow.org/mcp-tutorial). It explains the **Model Context Protocol (MCP)** and how to use LangFlow as both an MCP **client** and a **server**. It demonstrates how to expose your flows as tools for other applications.
 
 - **To run**:
   ```bash
   node dist/mcp-tutorial/mcp-tutorial.js
   ```
-
-This video explains how to use LangFlow as both an MCP client and server. [Learn how to use Langflow as both an MCP client & server\!](https://www.youtube.com/watch?v=pEjsaVVPjdI)
-http://googleusercontent.com/youtube_content/4

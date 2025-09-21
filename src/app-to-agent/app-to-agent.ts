@@ -62,8 +62,7 @@ async function askAgent(question: string, sessionId: string): Promise<string> {
 async function startChat(sessionId: string) {
     // Use the existing session ID passed from main
     console.log('\nStarting interactive chat...');
-    console.log("\nAsk the agent anything. Type 'quit' to exit or 'compare' to see the previous answer");
-    console.log("You can also use 'urls' to extract URLs from the last response");
+    console.log("\nType Email address to get recommendation based on historical purchases. Type 'quit' to exit or 'compare' to see the previous answer");
 
     const askQuestion = () => {
         rl.question('\nYour question: ', async (userQuestion: string) => {

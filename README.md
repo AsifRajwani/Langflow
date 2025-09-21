@@ -83,7 +83,7 @@ This tutorial focuses on how to **build an agent** within LangFlow itself. It te
 
 ### **3. Vector Store RAG**
 
-This example demonstrates a Retrieval-Augmented Generation (RAG) system. It shows how to create a chatbot that can answer questions based on a provided document. Note that the behavior of this flow can sometimes be inconsistent.
+This example corresponds to the [LangFlow RAG Tutorial](https://docs.langflow.org/chat-with-rag). It demonstrates a Retrieval-Augmented Generation (RAG) system that shows how to create a chatbot that can answer questions based on a provided document. Note that the behavior of this flow can sometimes be inconsistent.
 
 - **To run**:
   ```bash

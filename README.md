@@ -31,6 +31,7 @@ INJEST_FILE_CHATBOT_FLOW_ID=your_injest_file_chatbot_flow_id
 APP_TO_AGENT_FLOW_ID=your_app_to_agent_flow_id
 APP_TO_AGENT_DIRECTORY_NODE_ID=your_directory_node_id
 APP_TO_AGENT_DIRECTORY=your_directory_path
+MCP_FLOW_ID=your_mcp_flow_id
 ```
 
 2.  **Install Dependencies**: Run npm install to install all required packages.

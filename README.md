@@ -103,7 +103,48 @@ This example shows how to create a chatbot that can ingest files, as described i
 
 This example corresponds to the [LangFlow MCP Tutorial](https://docs.langflow.org/mcp-tutorial). It explains the **Model Context Protocol (MCP)** and how to use LangFlow as both an MCP **client** and a **server**. It demonstrates how to expose your flows as tools for other applications.
 
+#### **Prerequisites**
+
+This example requires two MCP servers:
+
+1. **Weather Server**:
+   Must be available locally on your PC. For Mac installation, follow these steps after installing Python:
+
+   ```bash
+   cd ~
+   rm -rf .venv
+   uv venv
+   source .venv/bin/activate
+   uv pip install mcp_weather_server
+   ```
+
+2. **IP GeoLocation Server**:
+   No installation required as it uses npx, which can:
+   - Run commands from locally installed packages
+   - Temporarily download, run, and delete packages that aren't installed
+
+#### **Troubleshooting & Usage Notes**
+
+Sometimes the flow may not work as expected:
+
+- First call often fails
+- Subsequent calls might not utilize available MCP servers
+- The TypeScript program automatically handles this by running an initialization prompt twice
+- In the playground, you may need to run this prompt first:
+  ```
+  use ip-geolocation and weather server where possible.Is it good time to hiking in my area. use all close by cities with info if needed.
+  ```
+
+#### **Sample Prompts**
+
+You can test the MCP functionality with these prompts:
+
+1. `Give me list of 10 cities close by me.` (Uses IP Geolocation server)
+2. `Is weather in London good for hiking.` (Uses weather server)
+3. `What is the weather in Paris.` (Uses weather server)
+4. `Is it good time to hiking in my area. use all close by cities with info if needed.` (Uses both servers)
+
 - **To run**:
   ```bash
-  node dist/mcp-tutorial/mcp-tutorial.js
+  node dist/mcp/mcp.js
   ```

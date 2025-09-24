@@ -69,7 +69,7 @@ You can test the agent's capabilities with these prompts:
 
 ### **2. Connect Applications to Agents**
 
-This example corresponds to the [LangFlow Agent Tutorial](https://docs.langflow.org/agent-tutorial).
+This example corresponds to the [LangFlow Agent Tutorial](https://docs.langflow.org/agent-tutorial). Web Search component is not used as it was not adding any value, everything else aligns with the tutorial url.
 
 ---
 
@@ -83,7 +83,16 @@ This example corresponds to the [LangFlow Agent Tutorial](https://docs.langflow.
 
 ---
 
-This tutorial focuses on how to **build an agent** within LangFlow itself. It teaches you to design and assemble an agent by connecting components and tools, such as a calculator and a web scraper.
+This tutorial focuses on how to **build an agent** within LangFlow itself. It teaches you to design and assemble an agent by connecting components and tools, such as a directory and a web scraper component.
+
+#### **Sample Prompts**
+
+You can test the agent's capabilities with these prompts:
+
+1. `What tools are available to answer my question?` (Lists the available tools)
+2. `Where you are looking for purchase data I uploaded csv already` (Makes sure CSV is read)
+3. `henry.chen@example.com` (Based on order history, recommend 3 items)
+4. `james.taylor@example.com` (Based on order history, recommend 3 items)
 
 - **To run**:
   ```bash

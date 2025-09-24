@@ -54,6 +54,14 @@ tsc -w
 
 This example corresponds to the [LangFlow quickstart tutorial](https://docs.langflow.org/get-started-quickstart). It demonstrates a basic, pre-configured agent that uses a single tool (the Calculator) to show fundamental functionality.
 
+#### **Sample Prompts**
+
+You can test the agent's capabilities with these prompts:
+
+1. `What tools are available to answer my question?` (Lists the available tools)
+2. `Evaluate 4+4` (Uses Calculator tool)
+3. `Check Wikipedia for cryptography` (Uses URL Fetch Request tool)
+
 - **To run**:
   ```bash
   node dist/simple-agent/simple-agent.js
@@ -140,10 +148,11 @@ Sometimes the flow may not work as expected:
 
 You can test the MCP functionality with these prompts:
 
-1. `Give me list of 10 cities close by me.` (Uses IP Geolocation server)
-2. `Is weather in London good for hiking.` (Uses weather server)
-3. `What is the weather in Paris.` (Uses weather server)
-4. `Is it good time to hiking in my area. use all close by cities with info if needed.` (Uses both servers)
+1. `What tools are available to answer my question?` (Lists the available tools)
+2. `Give me list of 10 cities close by me.` (Uses IP Geolocation server)
+3. `Is weather in London good for hiking.` (Uses weather server)
+4. `What is the weather in Paris.` (Uses weather server)
+5. `Is it good time to hiking in my area. use all close by cities with info if needed.` (Uses both servers)
 
 - **To run**:
   ```bash

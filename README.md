@@ -101,7 +101,21 @@ You can test the agent's capabilities with these prompts:
 
 ### **3. Vector Store RAG**
 
-This example corresponds to the [LangFlow RAG Tutorial](https://docs.langflow.org/chat-with-rag). It demonstrates a Retrieval-Augmented Generation (RAG) system that shows how to create a chatbot that can answer questions based on a provided document. Note that the behavior of this flow can sometimes be inconsistent.
+This example corresponds to the [LangFlow RAG Tutorial](https://docs.langflow.org/chat-with-rag). It demonstrates a Retrieval-Augmented Generation (RAG) system that shows how to create a chatbot that can answer questions based on a provided document. Note that the behavior of this flow is very inconsistent.
+
+#### **Important Usage Note**
+
+- **LangFlow Desktop**: You need to upload the file(s) in designer mode and then go to playground to ask questions about the file
+- **TypeScript Program**: Automatically handles file upload and then allows you to ask questions about the uploaded file
+
+#### **Sample Prompts**
+
+After uploading your file (e.g., `kb/ultrabook-pro-15.md`), you can test the RAG system with these prompts:
+
+1. `What tools are available to answer my question?` (Lists the available tools)
+2. `Summarize ultrabook-pro-15.md` (Provides summary of the uploaded file)
+3. `What are the key features mentioned in the document?` (Extracts specific information)
+4. `What is the warranty coverage?` (Finds relevant details from the document)
 
 - **To run**:
   ```bash

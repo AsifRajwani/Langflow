@@ -124,7 +124,21 @@ After uploading your file (e.g., `kb/ultrabook-pro-15.md`), you can test the RAG
 
 ### **4. Chatbot that Ingests Files**
 
-This example shows how to create a chatbot that can ingest files, as described in the [LangFlow "Chat with Files" tutorial](https://docs.langflow.org/chat-with-files). It demonstrates the process of uploading a file and passing its path to the flow.
+This example shows how to create a chatbot that can ingest files, as described in the [LangFlow "Chat with Files" tutorial](https://docs.langflow.org/chat-with-files). It allows you to upload a single file and ask questions about it. **It is a simpler version of Example 3 (Vector Store RAG) as it does not use vector database - it simply adds the file to the prompt.** The example demonstrates the process of uploading a file and passing its path to the flow.
+
+#### **Important Usage Note**
+
+- **LangFlow Desktop**: You need to upload the single file in designer mode and then go to playground to ask questions about the file
+- **TypeScript Program**: Automatically handles file upload and then allows you to ask questions about the uploaded file
+
+#### **Sample Prompts**
+
+After uploading single file (e.g., `kb/ultrabook-pro-15.md`), you can test the RAG system with these prompts:
+
+1. `What tools are available to answer my question?` (Lists the available tools)
+2. `Summarize ultrabook-pro-15.md` (Provides summary of the uploaded file)
+3. `What are the key features mentioned in the document?` (Extracts specific information)
+4. `What is the warranty coverage?` (Finds relevant details from the document)
 
 - **To run**:
   ```bash

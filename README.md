@@ -124,7 +124,7 @@ After uploading your file (e.g., `kb/ultrabook-pro-15.md`), you can test the RAG
 
 ### **4. Chatbot that Ingests Files**
 
-This example shows how to create a chatbot that can ingest files, as described in the [LangFlow "Chat with Files" tutorial](https://docs.langflow.org/chat-with-files). It allows you to upload a single file and ask questions about it. **It is a simpler version of Example 3 (Vector Store RAG) as it does not use vector database - it simply adds the file to the prompt.** The example demonstrates the process of uploading a file and passing its path to the flow.
+This example shows how to create a chatbot that can ingest files, as described in the [LangFlow "Chat with Files" tutorial](https://docs.langflow.org/chat-with-files). It allows you to upload a single file and ask questions about it. It is a simpler version of Example 3 (Vector Store RAG) as it does not use vector database - it simply adds the file to the prompt. The example demonstrates the process of uploading a file and passing its path to the flow.
 
 #### **Important Usage Note**
 
@@ -147,7 +147,7 @@ After uploading single file (e.g., `kb/ultrabook-pro-15.md`), you can test the R
 
 ### **5. Model Context Protocol (MCP) Tutorial**
 
-This example corresponds to the [LangFlow MCP Tutorial](https://docs.langflow.org/mcp-tutorial). It explains the **Model Context Protocol (MCP)** and how to use LangFlow as both an MCP **client** and a **server**. It demonstrates how to expose your flows as tools for other applications.
+This example corresponds to the [LangFlow MCP Tutorial](https://docs.langflow.org/mcp-tutorial). It demonstrates how an Agent can use MCP Servers to access weather data and user location information. Additionally, any LangFlow can be exposed as an MCP Server - see the [MCP Server documentation](https://docs.langflow.org/mcp-server) to learn how to expose your own flows as tools for other applications.
 
 #### **Prerequisites**
 
